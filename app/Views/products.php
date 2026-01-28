@@ -15,7 +15,7 @@
 <section class="py-5">
     <div class="container">
         <!-- Deck Mini -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="deck-mini">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckMiniCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
@@ -78,7 +78,7 @@
         </div>
 
         <!-- Deck Neo -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="deck-neo">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckNeoCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
@@ -141,7 +141,7 @@
         </div>
 
         <!-- Deck Studio -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="deck-studio">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckStudioCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
@@ -204,7 +204,7 @@
         </div>
 
         <!-- SecureGate Firewall -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="securegate-firewall">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="secureGateCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
@@ -267,7 +267,7 @@
         </div>
 
         <!-- HyperNAS -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="hypernas">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="hyperNASCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
@@ -330,7 +330,7 @@
         </div>
 
         <!-- PXL Interactive Panel -->
-        <div class="card mb-5 shadow-lg card-hover">
+        <div class="card mb-5 shadow-lg card-hover" id="pxl-interactive-panel">
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="pxlCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">

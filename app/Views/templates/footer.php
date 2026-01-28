@@ -19,11 +19,12 @@
                 <div class="col-lg-3 col-md-6">
                     <h6 class="text-white mb-3">Products</h6>
                     <ul class="list-unstyled small">
-                        <li class="mb-1">Deck Neo</li>
-                        <li class="mb-1">Deck Mini</li>
-                        <li class="mb-1">Deck Studio</li>
-                        <li class="mb-1">SecureGate Firewall</li>
-                        <li class="mb-1">HyperNAS</li>
+                        <li class="mb-1"><a href="/products#deck-neo">Deck Neo</a></li>
+                        <li class="mb-1"><a href="/products#deck-mini">Deck Mini</a></li>
+                        <li class="mb-1"><a href="/products#deck-studio">Deck Studio</a></li>
+                        <li class="mb-1"><a href="/products#securegate-firewall">SecureGate Firewall</a></li>
+                        <li class="mb-1"><a href="/products#hypernas">HyperNAS</a></li>
+                        <li class="mb-1"><a href="/products#pxl-interactive-panel">PXL Interactive Panel</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
