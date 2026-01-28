@@ -1,0 +1,6 @@
+enable intl extension in php.ini
+
+composer install --no-dev --no-scripts
+
+
+php spark serve
