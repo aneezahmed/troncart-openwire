@@ -24,7 +24,7 @@ class Cors extends BaseConfig
      *      maxAge: int,
      *  }
      */
-    public array $default = [
+    public $default = [
         /**
          * Origins for the `Access-Control-Allow-Origin` header.
          *
@@ -103,3 +103,4 @@ class Cors extends BaseConfig
         'maxAge' => 7200,
     ];
 }
+

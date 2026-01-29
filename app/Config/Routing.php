@@ -11,12 +11,11 @@
 
 namespace Config;
 
-use CodeIgniter\Config\Routing as BaseRouting;
 
 /**
  * Routing configuration
  */
-class Routing extends BaseRouting
+class Routing
 {
     /**
      * For Defined Routes.
@@ -28,7 +27,7 @@ class Routing extends BaseRouting
      *
      * @var list<string>
      */
-    public array $routeFiles = [
+    public $routeFiles = [
         APPPATH . 'Config/Routes.php',
     ];
 
@@ -39,7 +38,7 @@ class Routing extends BaseRouting
      *
      * Default: 'App\Controllers'
      */
-    public string $defaultNamespace = 'App\Controllers';
+    public $defaultNamespace = 'App\Controllers';
 
     /**
      * For Auto Routing.
@@ -48,7 +47,7 @@ class Routing extends BaseRouting
      *
      * Default: 'Home'
      */
-    public string $defaultController = 'Home';
+    public $defaultController = 'Home';
 
     /**
      * For Defined Routes and Auto Routing.
@@ -57,7 +56,7 @@ class Routing extends BaseRouting
      *
      * Default: 'index'
      */
-    public string $defaultMethod = 'index';
+    public $defaultMethod = 'index';
 
     /**
      * For Auto Routing.
@@ -66,7 +65,7 @@ class Routing extends BaseRouting
      *
      * Default: false
      */
-    public bool $translateURIDashes = false;
+    public $translateURIDashes = false;
 
     /**
      * Sets the class/method that should be called if routing doesn't
@@ -84,7 +83,7 @@ class Routing extends BaseRouting
      * Example:
      *  public $override404 = 'App\Errors::show404';
      */
-    public ?string $override404 = null;
+    public $override404 = null;
 
     /**
      * If TRUE, the system will attempt to match the URI against
@@ -94,7 +93,7 @@ class Routing extends BaseRouting
      *
      * If FALSE, will stop searching and do NO automatic routing.
      */
-    public bool $autoRoute = false;
+    public $autoRoute = false;
 
     /**
      * For Defined Routes.
@@ -103,7 +102,7 @@ class Routing extends BaseRouting
      *
      * Default: false
      */
-    public bool $prioritize = false;
+    public $prioritize = false;
 
     /**
      * For Defined Routes.
@@ -111,7 +110,7 @@ class Routing extends BaseRouting
      *
      * Default: false
      */
-    public bool $multipleSegmentsOneParam = false;
+    public $multipleSegmentsOneParam = false;
 
     /**
      * For Auto Routing (Improved).
@@ -125,7 +124,7 @@ class Routing extends BaseRouting
      *
      * @var array<string, string>
      */
-    public array $moduleRoutes = [];
+    public $moduleRoutes = [];
 
     /**
      * For Auto Routing (Improved).
@@ -136,5 +135,6 @@ class Routing extends BaseRouting
      *
      * Default: false
      */
-    public bool $translateUriToCamelCase = true;
+    public $translateUriToCamelCase = true;
 }
+

@@ -21,7 +21,7 @@ class Encryption extends BaseConfig
      * You need to ensure it is long enough for the cipher and mode you plan to use.
      * See the user guide for more info.
      */
-    public string $key = '';
+    public $key = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -34,7 +34,7 @@ class Encryption extends BaseConfig
      * - OpenSSL
      * - Sodium
      */
-    public string $driver = 'OpenSSL';
+    public $driver = 'OpenSSL';
 
     /**
      * --------------------------------------------------------------------------
@@ -46,7 +46,7 @@ class Encryption extends BaseConfig
      *
      * See the user guide for more information on padding.
      */
-    public int $blockSize = 16;
+    public $blockSize = 16;
 
     /**
      * --------------------------------------------------------------------------
@@ -55,7 +55,7 @@ class Encryption extends BaseConfig
      *
      * HMAC digest to use, e.g. 'SHA512' or 'SHA256'. Default value is 'SHA512'.
      */
-    public string $digest = 'SHA512';
+    public $digest = 'SHA512';
 
     /**
      * Whether the cipher-text should be raw. If set to false, then it will be base64 encoded.
@@ -63,7 +63,7 @@ class Encryption extends BaseConfig
      *
      * Set to false for CI3 Encryption compatibility.
      */
-    public bool $rawData = true;
+    public $rawData = true;
 
     /**
      * Encryption key info.
@@ -71,7 +71,7 @@ class Encryption extends BaseConfig
      *
      * Set to 'encryption' for CI3 Encryption compatibility.
      */
-    public string $encryptKeyInfo = '';
+    public $encryptKeyInfo = '';
 
     /**
      * Authentication key info.
@@ -79,7 +79,7 @@ class Encryption extends BaseConfig
      *
      * Set to 'authentication' for CI3 Encryption compatibility.
      */
-    public string $authKeyInfo = '';
+    public $authKeyInfo = '';
 
     /**
      * Cipher to use.
@@ -88,5 +88,6 @@ class Encryption extends BaseConfig
      * Set to 'AES-128-CBC' to decrypt encrypted data that encrypted
      * by CI3 Encryption default configuration.
      */
-    public string $cipher = 'AES-256-CTR';
+    public $cipher = 'AES-256-CTR';
 }
+
