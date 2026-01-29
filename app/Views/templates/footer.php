@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-3">TronCart Solutions</h5>
-                    <p class="small">Innovative technology solutions for the future</p>
+                    <h5 class="text-white mb-3">Troncart Solutions</h5>
+                    <p class="small">Innovative Technology Solutions for the Future</p>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="text-white mb-3">Quick Links</h6>
@@ -41,11 +41,13 @@
             <hr class="my-4 bg-secondary">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; <?= date('Y') ?> TronCart Solutions. All rights reserved.</p>
+                    <p class="small mb-0">&copy; <?= date('Y') ?> Troncart Solutions. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                    <a href="https://www.linkedin.com/showcase/troncart/" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="https://www.facebook.com/troncart/" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="http://instagram.com/troncart_india/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/troncart?lang=en" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
                 </div>
             </div>
         </div>

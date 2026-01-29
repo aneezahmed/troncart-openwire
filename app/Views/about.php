@@ -6,8 +6,8 @@
 <!-- Page Header -->
 <div class="page-header">
     <div class="container text-center">
-        <h1 class="display-3 fw-bold text-white">About TronCart Solutions</h1>
-        <p class="lead text-white">Leading innovation in technology</p>
+        <h1 class="display-3 fw-bold text-white">About Troncart Solutions</h1>
+        <p class="lead text-white">Leading Innovation In Technology</p>
     </div>
 </div>
 
@@ -18,7 +18,7 @@
             <div class="col-lg-8 text-center">
                 <span class="badge-custom">About Us</span>
                 <h2 class="section-title mt-3">Transforming Businesses Through Innovation</h2>
-                <p class="lead text-muted">TronCart Solutions is dedicated to transforming businesses through innovative technology solutions</p>
+                <p class="lead text-muted">Troncart Solutions is dedicated to transforming businesses through innovative technology solutions</p>
             </div>
         </div>
 
@@ -74,7 +74,7 @@
         <div class="card shadow-lg border-0">
             <div class="card-body p-5">
                 <div class="text-center mb-5">
-                    <h3 class="section-title">Why Choose TronCart Solutions?</h3>
+                    <h3 class="section-title">Why Choose Troncart Solutions?</h3>
                     <p class="lead text-muted">We combine cutting-edge technology with proven reliability to deliver solutions that drive real business value. Our comprehensive product portfolio and expert support ensure you have the tools needed to succeed in today's competitive landscape.</p>
                 </div>
                 <div class="row g-4 text-center">

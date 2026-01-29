@@ -7,7 +7,7 @@
 <div class="page-header">
     <div class="container text-center">
         <h1 class="display-3 fw-bold text-white">Smart Metering & Billing Platform</h1>
-        <p class="lead text-white">Comprehensive solution for meter reading, data management, and billing</p>
+        <p class="lead text-white">Comprehensive Solution for Meter Reading, Data Management, and Billing</p>
     </div>
 </div>
 
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row align-items-center mb-5">
             <div class="col-lg-6">
-                <span class="badge-custom">Our Solutions</span>
+                <span class="badge-custom">Our Solution</span>
                 <h2 class="section-title mt-3">Robust, Scalable Platform</h2>
                 <p class="lead text-muted mb-4">Our platform is designed for managing and analyzing utility meters using all major BMS protocols. It supports any make and model as long as they follow standard communication protocols, providing flexibility to manage electricity, water, gas, BTU, and more.</p>
                 <p class="text-muted">Whether for residential complexes, commercial buildings, or industrial sites, our platform streamlines meter reading, consumption calculation, billing, and beyond.</p>

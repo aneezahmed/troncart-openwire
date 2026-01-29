@@ -7,7 +7,7 @@
 <div class="page-header">
     <div class="container text-center">
         <h1 class="display-3 fw-bold text-white">Innovative Hardware Solutions</h1>
-        <p class="lead text-white">High-performance computing devices designed for modern businesses</p>
+        <p class="lead text-white">High-Performance Computing Devices Designed for Modern Businesses</p>
     </div>
 </div>
 
@@ -19,28 +19,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckMiniCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#deckMiniCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#deckMiniCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#deckMiniCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/deck-mini-1.jpg" class="d-block w-100" alt="Deck Mini 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/deck-mini-2.jpg" class="d-block w-100" alt="Deck Mini 2">
-                            </div>
-                            <div class="carousel-item">
+                            </div> -->
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/deck-mini-3.jpg" class="d-block w-100" alt="Deck Mini 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#deckMiniCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#deckMiniCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#deckMiniCarousel" data-bs-slide="next">
+                        </button> -->
+                        <!-- <button class="carousel-control-next" type="button" data-bs-target="#deckMiniCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -55,13 +55,13 @@
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
                                     <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Intel Core / AMD Ryzen</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Fully customizable</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Fully Customizable</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Advanced cooling</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Low maintenance</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Advanced Cooling</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Low Maintenance</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,28 +82,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckNeoCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#deckNeoCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#deckNeoCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#deckNeoCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/deck-neo-1.jpg" class="d-block w-100" alt="Deck Neo 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/deck-neo-2.jpg" class="d-block w-100" alt="Deck Neo 2">
-                            </div>
-                            <div class="carousel-item">
+                            </div> -->
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/deck-neo-3.jpg" class="d-block w-100" alt="Deck Neo 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#deckNeoCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#deckNeoCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#deckNeoCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -117,14 +117,14 @@
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Up to 70% cost reduction</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Up to 40% cost reduction</li>
                                     <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>4K@120fps performance</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>3-5 year warranty</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>OTA updates</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>3-5 year Warranty</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>OTA Updates</li>
                                 </ul>
                             </div>
                         </div>
@@ -145,28 +145,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="deckStudioCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#deckStudioCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#deckStudioCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#deckStudioCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/deck-studio-1.jpg" class="d-block w-100" alt="Deck Studio 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/deck-studio-2.jpg" class="d-block w-100" alt="Deck Studio 2">
                             </div>
                             <div class="carousel-item">
                                 <img src="/images/products/deck-studio-3.jpg" class="d-block w-100" alt="Deck Studio 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#deckStudioCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#deckStudioCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#deckStudioCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -180,14 +180,14 @@
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Highly customizable</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Dual speakers</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Highly Customizable</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Dual Speakers</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Crystal-clear display</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Easy maintenance</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Crystal-Clear display</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Easy Maintenance</li>
                                 </ul>
                             </div>
                         </div>
@@ -208,28 +208,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="secureGateCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#secureGateCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#secureGateCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#secureGateCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/securegate-firewall-1.jpg" class="d-block w-100" alt="SecureGate 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/securegate-firewall-2.jpg" class="d-block w-100" alt="SecureGate 2">
                             </div>
                             <div class="carousel-item">
                                 <img src="/images/products/securegate-firewall-3.jpg" class="d-block w-100" alt="SecureGate 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#secureGateCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#secureGateCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#secureGateCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -243,14 +243,14 @@
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>No subscription fees</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>No Subscription Fees</li>
                                     <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Powered by OPNsense</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Scalable deployment</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Enterprise-grade</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Scalable Deployment</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Enterprise-Grade</li>
                                 </ul>
                             </div>
                         </div>
@@ -271,28 +271,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="hyperNASCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#hyperNASCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#hyperNASCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#hyperNASCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/hypernas-1.jpg" class="d-block w-100" alt="HyperNAS 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/hypernas-2.jpg" class="d-block w-100" alt="HyperNAS 2">
                             </div>
                             <div class="carousel-item">
                                 <img src="/images/products/hypernas-3.jpg" class="d-block w-100" alt="HyperNAS 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#hyperNASCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#hyperNASCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#hyperNASCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -306,14 +306,14 @@
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Scalable bay options</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Enterprise performance</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Scalable Bay options</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Enterprise Performance</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>RAID support</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Data protection</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>RAID Support</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Data Protection</li>
                                 </ul>
                             </div>
                         </div>
@@ -334,28 +334,28 @@
             <div class="row g-0">
                 <div class="col-md-5">
                     <div id="pxlCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#pxlCarousel" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#pxlCarousel" data-bs-slide-to="1"></button>
                             <button type="button" data-bs-target="#pxlCarousel" data-bs-slide-to="2"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="/images/products/pxl-panel-1.jpg" class="d-block w-100" alt="PXL Panel 1">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="/images/products/pxl-panel-2.jpg" class="d-block w-100" alt="PXL Panel 2">
                             </div>
                             <div class="carousel-item">
                                 <img src="/images/products/pxl-panel-3.jpg" class="d-block w-100" alt="PXL Panel 3">
-                            </div>
+                            </div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#pxlCarousel" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#pxlCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#pxlCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -369,14 +369,14 @@
                         <div class="row mb-4">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Multiple sizes (55"-110")</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Super real color reproduction</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Multiple Sizes (55"-110")</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Super Real Color Reproduction</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>50,000+ hours lifespan</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Shock-resistant & durable</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>50,000+ Hours Lifespan</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Shock-Resistant & Durable</li>
                                 </ul>
                             </div>
                         </div>

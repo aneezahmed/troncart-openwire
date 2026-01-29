@@ -7,7 +7,7 @@
 <div class="page-header">
     <div class="container text-center">
         <h1 class="display-3 fw-bold text-white">Software Ecosystem</h1>
-        <p class="lead text-white">Powerful, integrated solutions for modern enterprises</p>
+        <p class="lead text-white">Powerful, Integrated Solutions for Modern Enterprises</p>
     </div>
 </div>
 

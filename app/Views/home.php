@@ -27,7 +27,7 @@
     <div class="container position-relative hero-content">
         <div class="row align-items-center mb-5">
             <div class="col-lg-12 text-center">
-                <h1 class="display-2 fw-bold mb-4 text-white">TronCart Solutions</h1>
+                <h1 class="display-2 fw-bold mb-4 text-white">Troncart Solutions</h1>
                 <p class="lead mb-5 fs-3 text-white">Empowering Businesses with Cutting-Edge Technology</p>
             </div>
         </div>
