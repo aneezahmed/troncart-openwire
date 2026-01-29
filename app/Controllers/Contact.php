@@ -26,12 +26,18 @@ class Contact extends BaseController
             return redirect()->back()->withInput()->with('errors', $validation->getErrors());
         }
 
-        $department = $this->request->getPost('department');
-        $name = $this->request->getPost('name');
-        $email = $this->request->getPost('email');
-        $phone = $this->request->getPost('phone');
-        $subject = $this->request->getPost('subject');
-        $message = $this->request->getPost('message');
+        $captchaError = $this->verifyCaptcha();
+        if ($captchaError !== null) {
+            return redirect()->back()->withInput()->with('errors', ['captcha' => $captchaError]);
+        }
+
+        $data = $validation->getValidated();
+        $department = $data['department'];
+        $name = trim($data['name']);
+        $email = trim($data['email']);
+        $phone = trim($data['phone'] ?? '');
+        $subject = trim($data['subject']);
+        $message = trim($data['message']);
 
         // Determine recipient email based on department
         $recipientEmail = '';
@@ -46,13 +52,14 @@ class Contact extends BaseController
         }
 
         // Prepare email content
-        $emailBody = "New Contact Form Submission\n\n";
-        $emailBody .= "Department: {$departmentName}\n";
-        $emailBody .= "Name: {$name}\n";
-        $emailBody .= "Email: {$email}\n";
-        $emailBody .= "Phone: " . ($phone ?: 'Not provided') . "\n";
-        $emailBody .= "Subject: {$subject}\n\n";
-        $emailBody .= "Message:\n{$message}\n";
+        $eol = PHP_EOL;
+        $emailBody = "New Contact Form Submission{$eol}{$eol}";
+        $emailBody .= "Department: {$departmentName}{$eol}";
+        $emailBody .= "Name: {$name}{$eol}";
+        $emailBody .= "Email: {$email}{$eol}";
+        $emailBody .= "Phone: " . ($phone ?: 'Not provided') . "{$eol}";
+        $emailBody .= "Subject: {$subject}{$eol}{$eol}";
+        $emailBody .= "Message:{$eol}{$message}{$eol}";
 
         // Send email using AWS SES API (credentials from environment)
         $region = getenv('AWS_REGION') ?: 'us-east-1';
@@ -100,5 +107,41 @@ class Contact extends BaseController
             log_message('error', 'SES send failed: ' . $e->getMessage());
             return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
         }
+    }
+
+    private function verifyCaptcha(): ?string
+    {
+        $secret = getenv('RECAPTCHA_SECRET_KEY') ?: '';
+        if ($secret === '') {
+            log_message('error', 'reCAPTCHA config missing: RECAPTCHA_SECRET_KEY');
+            return 'Captcha is not configured. Please try again later.';
+        }
+
+        $responseToken = $this->request->getPost('g-recaptcha-response');
+        if (empty($responseToken)) {
+            return 'Please complete the captcha.';
+        }
+
+        try {
+            $client = \Config\Services::curlrequest();
+            $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+                'form_params' => [
+                    'secret' => $secret,
+                    'response' => $responseToken,
+                    'remoteip' => $this->request->getIPAddress(),
+                ],
+                'timeout' => 5,
+            ]);
+
+            $result = json_decode((string) $response->getBody(), true);
+            if (!is_array($result) || empty($result['success'])) {
+                return 'Captcha verification failed. Please try again.';
+            }
+        } catch (\Throwable $e) {
+            log_message('error', 'reCAPTCHA verify failed: ' . $e->getMessage());
+            return 'Captcha verification failed. Please try again.';
+        }
+
+        return null;
     }
 }
