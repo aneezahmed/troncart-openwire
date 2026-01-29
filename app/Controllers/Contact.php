@@ -31,13 +31,25 @@ class Contact extends BaseController
             return redirect()->back()->withInput()->with('errors', ['captcha' => $captchaError]);
         }
 
-        $data = $validation->getValidated();
-        $department = $data['department'];
-        $name = trim($data['name']);
-        $email = trim($data['email']);
+        if (method_exists($validation, 'getValidated')) {
+            $data = $validation->getValidated();
+        } else {
+            $data = $this->request->getPost([
+                'department',
+                'name',
+                'email',
+                'phone',
+                'subject',
+                'message',
+            ]);
+        }
+
+        $department = $data['department'] ?? '';
+        $name = trim($data['name'] ?? '');
+        $email = trim($data['email'] ?? '');
         $phone = trim($data['phone'] ?? '');
-        $subject = trim($data['subject']);
-        $message = trim($data['message']);
+        $subject = trim($data['subject'] ?? '');
+        $message = trim($data['message'] ?? '');
 
         // Determine recipient email based on department
         $recipientEmail = '';
