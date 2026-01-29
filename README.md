@@ -11,15 +11,15 @@ This is the official website for TronCart Solutions, converted from a React/Type
 
 ## Tech Stack
 
-- **Framework**: CodeIgniter 4.6.4
-- **PHP Version**: 8.2+
+- **Framework**: CodeIgniter 4.0.5
+- **PHP Version**: 7.2+
 - **Frontend**: Bootstrap 5, Bootstrap Icons
 - **Web Server**: Apache 2.4
 
 ## Installation
 
 ### Prerequisites
-- PHP 8.2 or higher
+- PHP 7.2 or higher
 - Apache web server with mod_rewrite enabled
 - Composer
 
@@ -37,8 +37,13 @@ This is the official website for TronCart Solutions, converted from a React/Type
    ```
 
 3. **Configure environment**
-   - Copy `.env` file and update settings if needed
+   - Copy `.env.example` to `.env` and update settings
    - Update `app.baseURL` to match your domain
+   - Configure AWS SES (for contact form email):
+     - `AWS_REGION`
+     - `AWS_SES_FROM`
+     - `AWS_ACCESS_KEY_ID`
+     - `AWS_SECRET_ACCESS_KEY`
 
 4. **Set permissions**
    ```bash

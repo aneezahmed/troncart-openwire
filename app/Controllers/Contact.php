@@ -54,28 +54,50 @@ class Contact extends BaseController
         $emailBody .= "Subject: {$subject}\n\n";
         $emailBody .= "Message:\n{$message}\n";
 
-        // Send email using CodeIgniter's Email library
-        $emailService = \Config\Services::email();
-        
-        $emailService->setFrom($email, $name);
-        $emailService->setTo($recipientEmail);
-        $emailService->setSubject("Contact Form: {$subject}");
-        $emailService->setMessage($emailBody);
+        // Send email using AWS SES API (credentials from environment)
+        $region = getenv('AWS_REGION') ?: 'us-east-1';
+        $fromEmail = getenv('AWS_SES_FROM') ?: '';
+        $accessKey = getenv('AWS_ACCESS_KEY_ID') ?: '';
+        $secretKey = getenv('AWS_SECRET_ACCESS_KEY') ?: '';
+
+        if ($fromEmail === '' || $accessKey === '' || $secretKey === '') {
+            log_message('error', 'SES config missing: AWS_SES_FROM/AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY');
+            return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
+        }
 
         try {
-            if ($emailService->send()) {
-                return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
-            } else {
-                // Log the error for debugging
-                log_message('error', 'Email sending failed: ' . $emailService->printDebugger(['headers']));
-                
-                // Still show success to user (form data is received)
-                return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
-            }
+            $ses = new \Aws\Ses\SesClient([
+                'region'      => $region,
+                'version'     => '2010-12-01',
+                'credentials' => [
+                    'key'    => $accessKey,
+                    'secret' => $secretKey,
+                ],
+            ]);
+
+            $ses->sendEmail([
+                'Source' => $fromEmail,
+                'Destination' => [
+                    'ToAddresses' => [$recipientEmail],
+                ],
+                'Message' => [
+                    'Subject' => [
+                        'Data'    => "Contact Form: {$subject}",
+                        'Charset' => 'UTF-8',
+                    ],
+                    'Body' => [
+                        'Text' => [
+                            'Data'    => $emailBody,
+                            'Charset' => 'UTF-8',
+                        ],
+                    ],
+                ],
+                'ReplyToAddresses' => [$email],
+            ]);
+
+            return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
         } catch (\Exception $e) {
-            log_message('error', 'Email exception: ' . $e->getMessage());
-            
-            // Still show success to user (form data is received)
+            log_message('error', 'SES send failed: ' . $e->getMessage());
             return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
         }
     }
