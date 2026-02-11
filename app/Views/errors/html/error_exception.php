@@ -60,10 +60,11 @@ $errorId = uniqid('error', true);
 
     <pre>
     Caused by:
-    <?= esc($prevException::class), esc($prevException->getCode() ? ' #' . $prevException->getCode() : '') ?>
+    <?php $prevExceptionClass = get_class($prevException); ?>
+    <?= esc($prevExceptionClass), esc($prevException->getCode() ? ' #' . $prevException->getCode() : '') ?>
 
     <?= nl2br(esc($prevException->getMessage())) ?>
-    <a href="https://www.duckduckgo.com/?q=<?= urlencode($prevException::class . ' ' . preg_replace('#\'.*\'|".*"#Us', '', $prevException->getMessage())) ?>"
+    <a href="https://www.duckduckgo.com/?q=<?= urlencode($prevExceptionClass . ' ' . preg_replace('#\'.*\'|".*"#Us', '', $prevException->getMessage())) ?>"
        rel="noreferrer" target="_blank">search &rarr;</a>
     <?= esc(clean_path($prevException->getFile()) . ':' . $prevException->getLine()) ?>
     </pre>
@@ -120,7 +121,11 @@ $errorId = uniqid('error', true);
                                         <?php
                                         $params = null;
                                         // Reflection by name is not available for closure function
-                                        if (! str_ends_with($row['function'], '}')) {
+                                        $functionName = $row['function'];
+                                        $endsWithBrace = function_exists('str_ends_with')
+                                            ? str_ends_with($functionName, '}')
+                                            : substr($functionName, -1) === '}';
+                                        if (! $endsWithBrace) {
                                             $mirror = isset($row['class']) ? new ReflectionMethod($row['class'], $row['function']) : new ReflectionFunction($row['function']);
                                             $params = $mirror->getParameters();
                                         }

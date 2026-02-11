@@ -14,7 +14,7 @@ class Cookie extends BaseConfig
      *
      * Set a cookie name prefix if you need to avoid collisions.
      */
-    public string $prefix = '';
+    public $prefix = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -36,7 +36,7 @@ class Cookie extends BaseConfig
      *
      * Typically will be a forward slash.
      */
-    public string $path = '/';
+    public $path = '/';
 
     /**
      * --------------------------------------------------------------------------
@@ -45,7 +45,7 @@ class Cookie extends BaseConfig
      *
      * Set to `.your-domain.com` for site-wide cookies.
      */
-    public string $domain = '';
+    public $domain = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -54,7 +54,7 @@ class Cookie extends BaseConfig
      *
      * Cookie will only be set if a secure HTTPS connection exists.
      */
-    public bool $secure = false;
+    public $secure = false;
 
     /**
      * --------------------------------------------------------------------------
@@ -63,7 +63,7 @@ class Cookie extends BaseConfig
      *
      * Cookie will only be accessible via HTTP(S) (no JavaScript).
      */
-    public bool $httponly = true;
+    public $httponly = true;
 
     /**
      * --------------------------------------------------------------------------
@@ -87,7 +87,7 @@ class Cookie extends BaseConfig
      *
      * @var ''|'Lax'|'None'|'Strict'
      */
-    public string $samesite = 'Lax';
+    public $samesite = 'Lax';
 
     /**
      * --------------------------------------------------------------------------
@@ -103,5 +103,6 @@ class Cookie extends BaseConfig
      * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
      * @see https://tools.ietf.org/html/rfc2616#section-2.2
      */
-    public bool $raw = false;
+    public $raw = false;
 }
+

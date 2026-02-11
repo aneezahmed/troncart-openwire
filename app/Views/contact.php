@@ -40,6 +40,7 @@
                             </div>
                         <?php endif; ?>
                         
+                        <?php $recaptchaSiteKey = getenv('RECAPTCHA_SITE_KEY') ?: ''; ?>
                         <form action="/contact/submit" method="post">
                             <?= csrf_field() ?>
                             
@@ -71,6 +72,15 @@
                                 <div class="col-12">
                                     <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
                                     <textarea class="form-control" id="message" name="message" rows="5" required><?= old('message') ?></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <?php if ($recaptchaSiteKey !== ''): ?>
+                                        <div class="g-recaptcha" data-sitekey="<?= esc($recaptchaSiteKey) ?>"></div>
+                                    <?php else: ?>
+                                        <div class="alert alert-warning mb-0">
+                                            Captcha is not configured. Please set RECAPTCHA_SITE_KEY.
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">
@@ -132,5 +142,7 @@
         </div>
     </div>
 </section>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <?= view('templates/footer') ?>

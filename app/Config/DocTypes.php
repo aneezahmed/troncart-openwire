@@ -9,7 +9,7 @@ class DocTypes
      *
      * @var array<string, string>
      */
-    public array $list = [
+    public $list = [
         'xhtml11'           => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
         'xhtml1-strict'     => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
         'xhtml1-trans'      => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
@@ -39,5 +39,6 @@ class DocTypes
      *    `true` - to be HTML5 compatible
      *    `false` - to be XHTML compatible
      */
-    public bool $html5 = true;
+    public $html5 = true;
 }
+

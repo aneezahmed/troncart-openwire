@@ -11,7 +11,7 @@ namespace Config;
  * methods. The same applies when more than one mime-type exists for a
  * single extension.
  *
- * When working with mime types, please make sure you have the ´fileinfo´
+ * When working with mime types, please make sure you have the Â´fileinfoÂ´
  * extension enabled to reliably detect the media types.
  */
 class Mimes
@@ -21,7 +21,7 @@ class Mimes
      *
      * @var array<string, list<string>|string>
      */
-    public static array $mimes = [
+    public static $mimes = [
         'hqx' => [
             'application/mac-binhex40',
             'application/mac-binhex',
@@ -532,3 +532,4 @@ class Mimes
         return null;
     }
 }
+
